@@ -1,59 +1,53 @@
 /*
- *  Homework - Complexity
- *
- *  For the following functions, write the expected Time and Auxiliary Space
- *  Complexity using what you know about nested loops, hash table look-ups and
- *  the runtime of built in functions.
- *
- *  NOTE: You don't need to code to anything for these problems, just write
- *  what you the complexity to be using big-O notation
- **/
+  Homework - Complexity
 
-/*
-Order of Magnitude
+  For the following functions, write the expected Time and Auxiliary Space
+  Complexity using what you know about nested loops, hash table look-ups and
+  the runtime of built in functions.
 
-Reduce the following into it's Big-O order of magnitude.
-
-1. 5 + N                    Answer: 
-2. N + N^2                  Answer: 
-3. 15N + 13N                Answer: 
-4. 10000                    Answer: 
-5. log(N) + 1               Answer: 
-6. log(N) * 3 + 14N + 3     Answer: 
-7. Nlog(N) + 3N^2           Answer: 
-8. N^3 + log(N^4)           Answer: 
-9. N! + 180000N^2           Answer: 
-10. 15002^N                 Answer: 
-
-Grade: +10
-
+  NOTE: You don't need to code to anything for these problems, just write
+  what you the complexity to be using big-O notation
 */
 
 /*
- *  List the time and auxiliary space complexity of each of the following functions.
- */
+  Order of Magnitude
+
+  Reduce the following into it's Big-O order of magnitude.
+
+  1. 5 + N                    Answer: 
+  2. N + N^2                  Answer: 
+  3. 15N + 13N                Answer: 
+  4. 10000                    Answer: 
+  5. log(N) + 1               Answer: 
+  6. log(N) * 3 + 14N + 3     Answer: 
+  7. Nlog(N) + 3N^2           Answer: 
+  8. N^3 + log(N^4)           Answer: 
+  9. N! + 180000N^2           Answer: 
+  10. 15002^N                 Answer: 
+*/
 
 /*
- *     Index Of
- *
- *     Given an array of integers and a target value, return the index of the first
- *     element that matches the target value. If there are no matches, return -1.
- *
- *     Parameters
- *     Input: arr {Array of Integers}
- *     Input: target {Integer}
- *     Output: {Integer}
- *
- *     Examples
- *     [1, 2, 3, 4, 5, 6], 5 --> 4
- *     [9, 83, 74], 8 --> -1
- *     [6, 4, 7, 9, 7, 8, 2, 4, 3], 7 --> 2
- *
- *     Time Complexity: 
- *     Auxiliary Space Complexity: 
- 
- Grade +2
- */
+  List the time and auxiliary space complexity of each of the following functions.
+*/
+
+/*
+  Index Of
+
+  Given an array of integers and a target value, return the index of the first element that matches the target value. If there are no matches, return -1.
+
+  Parameters
+  Input: arr {Array of Integers}
+  Input: target {Integer}
+  Output: {Integer}
+
+  Examples
+  [1, 2, 3, 4, 5, 6], 5 --> 4
+  [9, 83, 74], 8 --> -1
+  [6, 4, 7, 9, 7, 8, 2, 4, 3], 7 --> 2
+
+  Time Complexity: 
+  Auxiliary Space Complexity: 
+*/
 
 function indexOf(arr, target) {
   for (let i = 0; i < arr.length; i++) {
@@ -65,24 +59,22 @@ function indexOf(arr, target) {
 }
 
 /*
- *     Evens
- *
- *     Given an array of integers, return an array of only the even values.
- *
- *     Parameters
- *     Input: arr {Array of Integers}
- *     Output: {Array of Integers}
- *
- *     Examples
- *     [1, 2, 3, 4, 5, 6] --> [2, 4, 6]
- *     [9, 83, 74] --> [74]
- *     [6, 4, 7, 9, 7, 8, 2, 4, 3] --> [6, 4, 8, 2, 4]
- *
- *     Time Complexity: 
- *     Auxiliary Space Complexity: 
- 
- Grade: +2
- */
+  Evens
+
+  Given an array of integers, return an array of only the even values.
+
+  Parameters
+  Input: arr {Array of Integers}
+  Output: {Array of Integers}
+
+  Examples
+  [1, 2, 3, 4, 5, 6] --> [2, 4, 6]
+  [9, 83, 74] --> [74]
+  [6, 4, 7, 9, 7, 8, 2, 4, 3] --> [6, 4, 8, 2, 4]
+
+  Time Complexity: 
+  Auxiliary Space Complexity: 
+*/
 
 function evens(arr) {
   var results = [];
@@ -95,23 +87,21 @@ function evens(arr) {
 }
 
 /*
- *    Sum
- *
- *    Given an array of integers, return the sum of all the integers.
- *
- *    Parameters
- *    Input: arr {Array of Integers}
- *    Output: {Integer}
- *
- *    Examples
- *    [1, 2, 3, 4, 5] --> 15
- *    [0, 1, -1] --> 0
- *    [] --> 0
- *
- *    Time Complexity: 
- *    Auxiliary Space Complexity: 
- 
- Grade: +2
+  Sum
+
+  Given an array of integers, return the sum of all the integers.
+
+  Parameters
+  Input: arr {Array of Integers}
+  Output: {Integer}
+
+  Examples
+  [1, 2, 3, 4, 5] --> 15
+  [0, 1, -1] --> 0
+  [] --> 0
+
+  Time Complexity: 
+  Auxiliary Space Complexity: 
  */
 
 function sum(arr) {
@@ -123,24 +113,22 @@ function sum(arr) {
 }
 
 /*
- *   Merge Arrays
- *
- *   Given two sorted arrays of integers, return a merged sorted array of both inputs.
- *
- *   Parameters
- *   Input: arr1 {Array of Integers}
- *   Input: arr2 {Array of Integers}
- *   Output: {Array of Integers}
- *
- *   Examples
- *   [1, 3, 9], [2, 4, 8] --> [1, 2, 3, 4, 8, 9]
- *   [12, 25, 40], [20, 37, 45] --> [12, 20, 25, 37, 40, 45]
- *   [10, 13, 24], [12, 35] --> [10, 12, 13, 24, 35]
- *
- *   Time Complexity: 
- *   Auxiliary Space Complexity: 
- 
- Grade: +2
+  Merge Arrays
+
+  Given two sorted arrays of integers, return a merged sorted array of both inputs.
+
+  Parameters
+  Input: arr1 {Array of Integers}
+  Input: arr2 {Array of Integers}
+  Output: {Array of Integers}
+
+  Examples
+  [1, 3, 9], [2, 4, 8] --> [1, 2, 3, 4, 8, 9]
+  [12, 25, 40], [20, 37, 45] --> [12, 20, 25, 37, 40, 45]
+  [10, 13, 24], [12, 35] --> [10, 12, 13, 24, 35]
+
+  Time Complexity: 
+  Auxiliary Space Complexity: 
  */
 
 function merge(arr1, arr2) {
@@ -161,25 +149,23 @@ function merge(arr1, arr2) {
 }
 
 /*
- *    Binary Search
- *
- *    Given a sorted array and a target value, use binary search to return the index of the target in the input array.
- *    Return -1 if no such target is found.
- *
- *    Parameters
- *    Input: arr {Array of Integers}
- *    Input: val {Integer}
- *    Output: {Integer}
- *
- *    Examples
- *    [1, 3, 4, 5, 8, 9], 5 --> 3
- *    [5, 7, 10, 12, 14], 7 --> 1
- *    [2, 4, 8, 9, 15], 3 --> -1
- *
- *   Time Complexity: 
- *   Auxiliary Space Complexity: 
- 
- Grade: +2
+  Binary Search
+
+  Given a sorted array and a target value, use binary search to return the index of the target in the input array.
+  Return -1 if no such target is found.
+
+  Parameters
+  Input: arr {Array of Integers}
+  Input: val {Integer}
+  Output: {Integer}
+
+  Examples
+  [1, 3, 4, 5, 8, 9], 5 --> 3
+  [5, 7, 10, 12, 14], 7 --> 1
+  [2, 4, 8, 9, 15], 3 --> -1
+
+  Time Complexity: 
+  Auxiliary Space Complexity: 
  */
 
 function binarySearch(arr, val) {
@@ -199,25 +185,22 @@ function binarySearch(arr, val) {
 }
 
 /*
- *    Factorial
- *
- *    Given an input integer n, return the n factorial value.
- *
- *    Parameters
- *    Input: n {Integer}
- *    Output: {Integer}
- *
- *    Examples
- *    5  --> 120 (5 * 4 * 3 * 2 * 1)
- *    1 --> 1 (1)
- *    9 --> 362880 (9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1)
- *
- *    Time Complexity: 
- *    Auxiliary Space Complexity: 
- 
- Grade: +1 
- Notes: the aux space is O(n). It is still evenly based on the size of the input.
- */
+  Factorial
+
+  Given an input integer n, return the n factorial value.
+  
+  Parameters
+  Input: n {Integer}
+  Output: {Integer}
+  
+  Examples
+  5  --> 120 (5 * 4 * 3 * 2 * 1)
+  1 --> 1 (1)
+  9 --> 362880 (9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1)
+
+  Time Complexity: 
+  Auxiliary Space Complexity: 
+*/
 
 function factorial(n) {
   if (n === 1) {
@@ -227,13 +210,11 @@ function factorial(n) {
 }
 
 /*
- *  First Times Last
- *
- *  Time Complexity: 
- *  Auxiliary Space Complexity: 
- 
- Grade: +2
- */
+  First Times Last
+
+  Time Complexity: 
+  Auxiliary Space Complexity: 
+*/
 
 function firstTimesLast(arr) {
   let result = null;
@@ -245,15 +226,12 @@ function firstTimesLast(arr) {
 }
 
 /*
- *  Most Frequent Occurrence
- *  NOTE: The string only contains letters in it
- *
- *  Time Complexity: 
- *  Auxiliary Space Complexity: 
- 
- Grade: +1 
- Notes: the aux space is O(1) assuming 26 letters in the alphabet. Makes since because once it is defined, it will never get larger than that.
- */
+  Most Frequent Occurrence
+  NOTE: The string only contains letters in it
+
+  Time Complexity: 
+  Auxiliary Space Complexity: 
+*/
 
 function mostFrequentOccurrence(str) {
   const lowerString = str.toLowerCase();
@@ -279,13 +257,11 @@ function mostFrequentOccurrence(str) {
 }
 
 /*
- *  Print Unordered Pairs
- *
- *  Time Complexity: 
- *  Auxiliary Space Complexity: 
- 
- Grade: +2
- */
+  Print Unordered Pairs
+
+  Time Complexity: 
+  Auxiliary Space Complexity: 
+*/
 
 function printUnorderedPairs(array) {
   for (let i = 0; i < array.length; i++) {
@@ -296,14 +272,11 @@ function printUnorderedPairs(array) {
 }
 
 /*
- *  Make Combined Matrix
- *
- *  Time Complexity: 
- *  Auxiliary Space Complexity: 
- 
- Grade: +1 
- Notes: the aux space is also O(MN)
- */
+  Make Combined Matrix
+
+  Time Complexity: 
+  Auxiliary Space Complexity: 
+*/
 
 function makeCombinedMatrix(arr1, arr2) {
   let result = [];
@@ -320,14 +293,11 @@ function makeCombinedMatrix(arr1, arr2) {
 }
 
 /*
- *  Nth Fibonacci
- *
- *  Time Complexity: 
- *  Auxiliary Space Complexity: 
- 
- Grade: +1
- Notes: the aux space is O(n). I didn't take into account the array within the function. I was focused on that return.
- */
+  Nth Fibonacci
+
+  Time Complexity: 
+  Auxiliary Space Complexity: 
+*/
 function nthFibonacci(n) {
   let result = [0, 1];
   for (let i = 1; i < n; i++) {
@@ -337,13 +307,11 @@ function nthFibonacci(n) {
 }
 
 /*
- *  Nth Fibonacci - the return
- *
- *  Time Complexity: 
- *  Auxiliary Space Complexity: 
- 
- Grade: +2
- */
+  Nth Fibonacci - the return
+
+  Time Complexity: 
+  Auxiliary Space Complexity: 
+*/
 
 function nthFibonacci(n) {
   let cache = {};
