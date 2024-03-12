@@ -199,7 +199,7 @@ function binarySearch(arr, val) {
   9 --> 362880 (9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1)
 
   Time Complexity: O(N)
-  Auxiliary Space Complexity: O(1)
+  Auxiliary Space Complexity: O(1) -> This is actually N
 */
 
 function factorial(n) {
@@ -230,7 +230,7 @@ function firstTimesLast(arr) {
   NOTE: The string only contains letters in it
 
   Time Complexity: O(N)
-  Auxiliary Space Complexity: O(N)
+  Auxiliary Space Complexity: O(N) -> This is O(1) constant assuming there are only 26 letters
 */
 
 function mostFrequentOccurrence(str) {
@@ -296,7 +296,7 @@ function makeCombinedMatrix(arr1, arr2) {
   Nth Fibonacci
 
   Time Complexity: O(N)
-  Auxiliary Space Complexity: O(1)
+  Auxiliary Space Complexity: O(1) -> This is actually O(N)
 */
 function nthFibonacci(n) {
   let result = [0, 1];
