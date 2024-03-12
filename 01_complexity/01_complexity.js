@@ -295,8 +295,8 @@ function makeCombinedMatrix(arr1, arr2) {
 /*
   Nth Fibonacci
 
-  Time Complexity: 
-  Auxiliary Space Complexity: 
+  Time Complexity: O(N)
+  Auxiliary Space Complexity: O(1)
 */
 function nthFibonacci(n) {
   let result = [0, 1];
@@ -309,8 +309,8 @@ function nthFibonacci(n) {
 /*
   Nth Fibonacci - the return
 
-  Time Complexity: 
-  Auxiliary Space Complexity: 
+  Time Complexity: O(N)
+  Auxiliary Space Complexity: O(N)
 */
 
 function nthFibonacci(n) {
