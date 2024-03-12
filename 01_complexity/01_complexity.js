@@ -164,8 +164,8 @@ function merge(arr1, arr2) {
   [5, 7, 10, 12, 14], 7 --> 1
   [2, 4, 8, 9, 15], 3 --> -1
 
-  Time Complexity: 
-  Auxiliary Space Complexity: 
+  Time Complexity: O(log_2(N))
+  Auxiliary Space Complexity: O(1)
  */
 
 function binarySearch(arr, val) {
