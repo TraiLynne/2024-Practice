@@ -212,8 +212,8 @@ function factorial(n) {
 /*
   First Times Last
 
-  Time Complexity: 
-  Auxiliary Space Complexity: 
+  Time Complexity: O(1)
+  Auxiliary Space Complexity: O(1)
 */
 
 function firstTimesLast(arr) {
